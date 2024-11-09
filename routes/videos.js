@@ -28,14 +28,39 @@ router
 			id: uuid(),
 			title: title,
 			channel: "Berri Onuorah",
-			image: "delete this",
+			image: "/images/image9.jpg",
 			description: description,
-			views: "900,000",
-			likes: "150,000",
-			duration: "5:05",
-			video: "delete this",
+			views: "900,407",
+			likes: "120,439",
+			duration: "5:45",
+			video: "https://unit-3-project-api-0a5620414506.herokuapp.com/stream",
 			timestamp: Date.now(),
-			comments: ["delete please"],
+			comments: [
+				{
+					id: uuid(),
+					name: "Arjen Steenbakker",
+					comment:
+						"Exploring the stories behind famous paintings has made art history come alive. I appreciate the diverse selection of masterpieces you've covered, providing a well-rounded view of different periods and styles. Looking forward to more episodes where art and storytelling beautifully intersect!",
+					likes: 1,
+					timestamp: 1698297462000,
+				},
+				{
+					id: uuid(),
+					name: "Ambrus Gerzson",
+					comment:
+						"Can't wait for more documentaries that celebrate the harmony of our natural world!",
+					likes: 0,
+					timestamp: 1680239862000,
+				},
+				{
+					id: uuid(),
+					name: "Cleo Polster",
+					comment:
+						"Your video on mindful living came at the perfect time for me. Your practical tips for embracing serenity in daily life are incredibly helpful. I'm already feeling more centered and present. Grateful for the calming influence you bring to your content!",
+					likes: 2,
+					timestamp: 1676441862000,
+				},
+			],
 		};
 
 		fs.writeFileSync(
